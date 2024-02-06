@@ -105,7 +105,7 @@ Using the **complete dataset**, consider what other characteristics may predict 
 
 ### Question 6: (3 pts)
 
-Create a visualization to answer your research question. Include an informative headline to your visualization and interpret what you see! *There are many ways to represent 3 variables: using different colors, shapes, size, faceting, ...* What evidence do the data provide for or against your hypotheses?
+Create a visualization to answer your research question. Include an informative headline to your visualization and interpret what you see! *There are many ways to represent 3 variables: using different colors, shapes, size, faceting, ...* What evidence do the data provide for or against your hypotheses? Which hypothesis is more likely to be true?
 
 ```{r}
 # your code goes below (make sure to edit comment)
