@@ -1,0 +1,131 @@
+---
+title: "Lab 3"
+output: html_document
+---
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = TRUE,  
+                      warning = FALSE, message = FALSE, 
+                      fig.align = "center",
+                      R.options = list(max.print=100))
+
+# Edit the file starting below
+```
+
+
+
+### Enter the names of the group members here: 
+
+**This assignment is due by the end of the day Only one student in the group submits a pdf file on Gradescope.**
+
+*For all questions, include the R commands/functions that you used to find your answer (show R chunk). Answers without supporting code will not receive credit. Write full sentences to describe your findings.*
+
+In this lab, you will explore the dataset `netflix` that you will download from `GitHub.` Let's first load the packages we will need to complete this lab:
+
+```{r, warning=FALSE}
+# If working on your own computer, remember to install new packages with install.packages("name") in the console
+library(tidyverse) 
+```
+
+Then let's download our dataset using `read_csv()` (you must be connected to the Internet to do this):
+
+```{r}
+# Upload data from GitHub
+netflix <- read_csv("https://raw.githubusercontent.com/rdpeng/stat322E_public/main/data/netflix.csv")
+```
+
+This dataset contains information about Netflix movies: title, genre, year of release, running time (in minutes), IMDB score, and language.
+
+```{r}
+# Take a quick look with tail() which shows the last 6 observations
+tail(netflix)
+```
+
+The goal of the lab is to investigate how some characteristics of a movie affects its IMDB score, focusing on some genres.
+
+------------------------------------------------------------------------
+
+### Question 1: (3 pts)
+
+Explore the `Genre` variable with a `ggplot` visualization. *Make sure to add labels, you can also add some colors to make it prettier!* What are the most/least common genres?
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 2: (2 pts)
+
+You will focus on a subset of genres: each group member should select a different genre. Filter the `netflix` dataset to only keep the genres you selected. Save the filtered dataset in your environment with a new name by assigning it to a new object. You will work with the filtered dataset for the next two questions.
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+------------------------------------------------------------------------
+
+### Question 3: (4 pts)
+
+Using the filtered dataset from Question 2, explore the distribution of the `IMDB` variable with a `ggplot` visualization. *Make sure to add labels, you can also add some colors to make it prettier!* Describe the shape, center, and spread of the distribution, including appropriate statistics. 
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 4: (3 pts)
+
+Working with the other members of your Lab group, investigate the relationship between `IMDB` and `Genre` with a `ggplot` visualization. *Make sure to add labels, you can also add some colors to make it prettier!* Does there seem to be a difference in IMDB across genres? Justify your answer by referring to your visualizations.
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 5: (2 pts)
+
+Using the **complete dataset**, consider what other characteristics may predict the IMDB score: select one of the other variables in the dataset besides genre. Write a research question to explore the relationship between the three variables. *For example, (create a question of your own, don't use this one!): How are genre and language related to IMDB score?*
+
+**Write your research question here including at least two hypotheses to compare. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 6: (3 pts)
+
+Create a visualization to answer your research question. Include an informative headline to your visualization and interpret what you see! *There are many ways to represent 3 variables: using different colors, shapes, size, faceting, ...* What evidence do the data provide for or against your hypotheses?
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 7: (1 pt)
+
+How do the results of Questions 5 and 6 compare to what you answered in the Pre-Lab Quiz on which variables are related to IMDB score? Did the data match your expectations or not? If the data differed from your expectation, provide a sentence with a possible explanation for why the data differed from what you expected.
+
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+
+### Formatting: (2 pts)
+
+Comment your code, write full sentences, and knit your file!
