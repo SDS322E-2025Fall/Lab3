@@ -62,6 +62,8 @@ Explore the `Genre` variable with a `ggplot` visualization. *Make sure to add la
 
 You will focus on a subset of genres: each group member should select a different genre. Filter the `netflix` dataset to only keep the genres you selected. Save the filtered dataset in your environment with a new name by assigning it to a new object. You will work with the filtered dataset for the next two questions.
 
+HINT: Use the `%in%` operator with `filter()` to filter the datset to a set of genres.
+
 ```{r}
 # your code goes below (make sure to edit comment)
 
