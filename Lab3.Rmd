@@ -1,6 +1,8 @@
 ---
 title: "Lab 3"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r global_options, include=FALSE}
@@ -43,7 +45,6 @@ tail(netflix)
 
 The goal of the lab is to investigate how some characteristics of a movie affects its IMDB score, focusing on some genres.
 
-------------------------------------------------------------------------
 
 ### Question 1: (3 pts)
 
@@ -56,7 +57,6 @@ Explore the `Genre` variable with a `ggplot` visualization. *Make sure to add la
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 2: (2 pts)
 
@@ -69,7 +69,6 @@ HINT: Use the `%in%` operator with `filter()` to filter the datset to a set of g
 
 ```
 
-------------------------------------------------------------------------
 
 ### Question 3: (4 pts)
 
@@ -82,7 +81,6 @@ Using the filtered dataset from Question 2, explore the distribution of the `IMD
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 4: (3 pts)
 
@@ -95,7 +93,6 @@ Working with the other members of your Lab group, investigate the relationship b
 
 **Your answer goes here. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 5: (2 pts)
 
@@ -103,7 +100,6 @@ Using the **complete dataset**, consider what other characteristics may predict 
 
 **Write your research question here including at least two hypotheses to compare. Write sentences in bold.**
 
-------------------------------------------------------------------------
 
 ### Question 6: (3 pts)
 
@@ -115,18 +111,6 @@ Create a visualization to answer your research question. Include an informative 
 ```
 
 **Your answer goes here. Write sentences in bold.**
-
-------------------------------------------------------------------------
-
-### Question 7: (1 pt)
-
-How do the results of Questions 5 and 6 compare to what you answered in the Pre-Lab Quiz on which variables are related to IMDB score? Did the data match your expectations or not? If the data differed from your expectation, provide a sentence with a possible explanation for why the data differed from what you expected.
-
-
-**Your answer goes here. Write sentences in bold.**
-
-------------------------------------------------------------------------
-
 
 ### Formatting: (2 pts)
 
